@@ -16,7 +16,7 @@ Download the [latest version](https://oss.sonatype.org/content/repositories/rele
 The library is available on `mavenCentral()` and `jcenter()`. In your module's `build.gradle`, add the following code snippet and run the gradle-sync.
 
 ```
-	allprojects {
+allprojects {
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
