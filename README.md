@@ -16,9 +16,16 @@ Download the [latest version](https://oss.sonatype.org/content/repositories/rele
 The library is available on `mavenCentral()` and `jcenter()`. In your module's `build.gradle`, add the following code snippet and run the gradle-sync.
 
 ```
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+	
 dependencies {
     ...
-    compile 'io.hypertrack:smart-scheduler:0.0.13'
+    implementation 'com.github.leducanh15:SmartScheduler:1.0.0'
     ...
 }
 ```
