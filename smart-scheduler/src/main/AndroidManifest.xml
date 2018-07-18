@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.smart.scheduler">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application>
+        <service
+            android:name="io.hypertrack.smart_scheduler.SmartSchedulerAlarmReceiverService"
+            android:exported="false" />
+        <receiver
+            android:name="io.hypertrack.smart_scheduler.SmartSchedulerAlarmReceiver"
+            android:exported="false" />
+    </application>
+</manifest>
